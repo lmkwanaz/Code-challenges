@@ -1,0 +1,42 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+
+namespace SoloLearn
+{
+	class Program
+	{
+		static void Main(string[] args)
+		{
+			string hey = "9119";
+			string putItAll ="";
+			int num;
+			
+			foreach(char temp in hey){
+			    int bar = (int)char.GetNumericValue(temp);
+			    
+			    int getSqure = bar * bar;
+			    
+			    //Console.WriteLine(temp);
+			    string changeIt = getSqure.ToString();
+			     putItAll += changeIt;
+			     //Console.WriteLine(getSqure);
+			     
+			}
+			Console.WriteLine(putItAll);
+			
+			num = Convert.ToInt32(putItAll);
+			
+			Console.WriteLine(num);
+		}
+	}
+}
+
+// Welcome. In this kata, you are asked to square every digit of a number and concatenate them.
+
+// For example, if we run 9119 through the function, 811181 will come out, because 92 is 81 and 12 is 1.
+
+// Note: The function accepts an integer and returns an integer
